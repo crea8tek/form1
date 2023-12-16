@@ -357,11 +357,11 @@
             http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
             http.onreadystatechange = function() {
-                if (http.readyState == 4 && http.status == 200) {
+                //if (http.readyState == 4 && http.status == 200) {
                     //alert("Form submitted successfully");
                     document.getElementById("frmdata").reset();
                     console.log(http.responseText);
-                }
+                //}
             }
 
             // Send params with request
